@@ -11,7 +11,15 @@ namespace Sakk.Babuk
 
         public virtual void LepesBeallitas(Mezo babuHelyzete, Tabla tabla)
         {
-            throw new NotImplementedException();
+            if (babuHelyzete.babuTipus is Paraszt)
+            {
+                new Paraszt(sor, oszlop).LepesBeallitas(babuHelyzete, tabla);
+            }
+            else if (babuHelyzete.babuTipus is Bastya)
+            {
+                new Bastya(sor, oszlop).LepesBeallitas(babuHelyzete, tabla);
+            }
+            new Paraszt(sor, oszlop).LepesBeallitas(babuHelyzete, tabla);
         }
     }
 }
