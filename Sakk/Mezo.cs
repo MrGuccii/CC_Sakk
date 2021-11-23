@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Sakk
+namespace Sakk.Babuk
 {
     public class Mezo
     {
@@ -24,6 +24,8 @@ namespace Sakk
         public Button gomb { get; set; }
 		//public int lepesekSzama { get; set; }
         public bool changed { get; private set; }
+        public Babu babuTipus { get; set; }
+        public Tabla tabla { get; set; }
 
         public Mezo(int sor, int oszlop)
         {

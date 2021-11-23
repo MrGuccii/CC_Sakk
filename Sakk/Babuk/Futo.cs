@@ -1,6 +1,6 @@
-﻿namespace Sakk
+﻿namespace Sakk.Babuk
 {
-	public class Futo : Mezo
+	public class Futo : Babu
 	{
 		
 		public Futo(int sor, int oszlop) : base(sor, oszlop)

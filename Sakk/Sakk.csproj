@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Babuk\Babu.cs" />
     <Compile Include="Babuk\Kiralyno.cs" />
     <Compile Include="Babuk\Futo.cs" />
     <Compile Include="Babuk\LepesSzamlalo.cs" />

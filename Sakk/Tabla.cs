@@ -164,10 +164,11 @@ namespace Sakk
             }
         }
         //bábuk lépés szabályai
-        public void LehetosegekBeallitasa(Mezo babuHelyzete, string babuNev)
+        public void LehetosegekBeallitasa(Mezo babuHelyzete, Babu babu)
         {
             int seged = 1;
-            switch (babuNev)
+            babu.LepesBeallitas(babuHelyzete, this);
+            switch (babu)
             {                                   
                 case "Ló":
                     //felfele balra
@@ -508,7 +509,8 @@ namespace Sakk
 
                 case "Bástya":
                     //felfelé
-                        while (babuHelyzete.sor - seged > -1)
+                        
+                    while (babuHelyzete.sor - seged > -1)
                         {
                             if (tabla[babuHelyzete.oszlop, babuHelyzete.sor - seged].foglalt)
                             {

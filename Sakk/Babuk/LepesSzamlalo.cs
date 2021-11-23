@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sakk.Babuk
+﻿namespace Sakk.Babuk
 {
-    public class LepesSzamlalo : Mezo
+    public class LepesSzamlalo : Babu
     {
         public LepesSzamlalo(int sor, int oszlop) : base(sor, oszlop)
         {

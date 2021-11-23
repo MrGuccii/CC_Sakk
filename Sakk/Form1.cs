@@ -1,22 +1,16 @@
 ﻿using System;
-using Sakk;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Sakk.Babuk;
 
 namespace Sakk
 {
 
-    public partial class Form1 : Form
+    public partial class Sakk : Form
     {
         public Tabla sakkTabla = new Tabla(8);        
 
-        public Form1()
+        public Sakk()
         { 
             InitializeComponent();
             panel1.Width = sakkTabla.tabla.GetLength(0) * 70;
